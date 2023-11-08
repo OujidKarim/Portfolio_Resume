@@ -15,7 +15,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #bd1550;
+  color: #15bd4d;
 }
 
 .title_website {
@@ -62,11 +62,11 @@ a:hover {
 }
 
 #title span {
-  color: #bd1550;
+  color: #15bd4d;
   font-size: 2.5rem;
 }
 
-nav {
+#nav {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
@@ -75,38 +75,38 @@ nav {
   font-size: calc(0.6rem + 0.8vw);
 }
 
-nav li {
+#nav li {
   list-style: none;
 }
 
-nav ul {
+#nav ul {
   display: flex;
   justify-content: space-between;
   width: 50%;
   margin-right: 5%;
 }
 
-nav ul li {
+#nav ul li {
   display: inline-block;
 }
 
-nav ul li a {
+#nav ul li a {
   color: #fff;
   text-decoration: none;
   position: relative;
 }
 
-nav ul li a::after {
+#nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #bd1550;
+  background: #15bd4d;
   position: absolute;
   left: 0;
   bottom: -6px;
 }
 
-nav ul li a:hover::after {
+#nav ul li a:hover::after {
   width: 100%;
   transition: .5s;
 }
@@ -146,7 +146,7 @@ nav ul li a:hover::after {
   left: 0;
   height: 100%;
   width: 0%;
-  background-color: #bd1550;
+  background-color: #15bd4d;
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
@@ -166,9 +166,9 @@ nav ul li a:hover::after {
 #title .portfolio {
   display: inline-block;
   padding: 10px 30px;
-  color: #bd1550;
+  color: #15bd4d;
   background-color: transparent;
-  border: 2px solid #bd1550;
+  border: 2px solid #15bd4d;
   border-radius: 10px;
   font-size: 2rem;
   text-transform: uppercase;
@@ -180,14 +180,14 @@ nav ul li a:hover::after {
 
 #title .portfolio:hover {
   color: white;
-  background-color: #bd1550;
+  background-color: #15bd4d;
 }
 
 /* à propos */
 #cv {
   padding: 80px 0;
   color: #fff;
-  background-color: #3D031C;
+  background-color: #fff;
   position: relative;
 
 }
@@ -221,7 +221,17 @@ nav ul li a:hover::after {
 }
 
 
+#contact {
+  background: rgb(37, 12, 1);
+  padding: 5%;
+}
 
+.socialList nav ul li{
+  font-size: calc(0.8rem + 1vw);
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
 
 /* animations et media query */
 @keyframes text_reveal_box {
@@ -243,7 +253,7 @@ nav ul li a:hover::after {
 
 @keyframes text_reveal_name {
   100% {
-    color: #bd1550;
+    color: #15bd4d;
   }
 }
 
