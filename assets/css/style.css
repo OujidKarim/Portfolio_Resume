@@ -27,7 +27,7 @@ a:hover {
 }
 
 #title {
-  background-image: url(../img/step_background.jpg);
+  background-image: url(../img/step_background.webp);
   background-size: cover;
   background-position: top center;
   position: relative;
