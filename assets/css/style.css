@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #bd1550;
+}
+
+.title_website {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  background-image: url(../img/step_background.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+
+#title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#title .title {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+
+#title h1 {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+#title span {
+  color: #bd1550;
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 15px;
+  font-size: calc(0.6rem + 0.8vw);
+}
+
+nav li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 5%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #bd1550;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  transition: .5s;
+}
+
+#icon {
+  cursor: pointer;
+  display: none;
+}
+
+#title h2 {
+  display: block;
+  width: fit-content;
+  font-size: 3rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 1s ease forwards;
+  animation-delay: 1.3s;
+  margin-bottom: 0.5rem;
+}
+
+#title h2:nth-child(1) {
+  animation-delay: 1s;
+}
+
+#title h2:nth-child(2) {
+  animation-delay: 2s;
+}
+
+#title h2:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+#title h2 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #bd1550;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+}
+
+#title h2:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+
+#title h2:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+
+#title h2:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+
+#title .portfolio {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #bd1550;
+  background-color: transparent;
+  border: 2px solid #bd1550;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 36px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+#title .portfolio:hover {
+  color: white;
+  background-color: #bd1550;
+}
+
+/* à propos */
+#cv {
+  padding: 80px 0;
+  color: #fff;
+  background-color: #3D031C;
+  position: relative;
+
+}
+
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width:80%;
+  border-radius: 15px;
+  margin-left: 20%;
+
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+
+
+/* animations et media query */
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes text_reveal_name {
+  100% {
+    color: #bd1550;
+  }
+}
+
+@media (max-width: 700px) {
+  #icon {
+    display: block;
+  }
+
+  #icon:hover{
+    color: #bd1550;
+  }
+  #icon:before {
+    content: "\2630";
+    font-size: 4rem;
+    color: white;
+  }
+  
+  nav ul {
+    position: fixed;
+    margin-top: 10%;
+    left: -100%;
+    top: 5%;
+    flex-direction: column;
+    background: #a0063c;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+  }
+  nav li {
+    padding: 3px 0;
+  }
+  nav li:hover {
+    background: #6d0026;
+  }
+  .active #icon:before {
+    content: "\2715";
+  }
+  nav.active ul {
+    left: 0;
+  }
+}
