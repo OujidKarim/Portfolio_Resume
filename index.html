@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="./assets/js/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
@@ -13,57 +12,82 @@
 </head>
 
 <body>
-    <!--c'est l'en-tete du site ou se trouvera le logo avec nom et prenom ainsi que la liste pour naviguer sur le site -->
-    <!-- <header>
-        <section id="header">
-            
-            
-        </section>
-        
-    </header> -->
-    <!--cette section contient la petite animation en css avec le raccourci vers le cv-->
-    <section id="title">
-        <div class="header_website">
-            <div class="nav-bar">
-                <div class="nav-list">
-                    <div class="bar">
-                        <nav id="nav">
-                            <a href="#title">
-                                <h1><span>O</span>ujid <span>K</span>arim</h1>
-                            </a>
-                            <ul>
-                                <li><a href="#cv">présentation</a></li>
-                                <li><a href="#">compétences</a></li>
-                                <li><a href="#contact">contact</a></li>
-                            </ul>
-                            <div id="icon"></div>
-                        </nav>
+    <header>
+        <section id="title">
+            <div class="header_website">
+                <div class="nav-bar">
+                    <div class="nav-list">
+                        <div class="bar">
+                            <nav id="nav">
+                                <a href="#title">
+                                    <h1><span>O</span>ujid <span>K</span>arim</h1>
+                                </a>
+                                <ul>
+                                    <li><a href="#cv">présentation</a></li>
+                                    <li><a href="#skills">compétences</a></li>
+                                    <li><a href="#contact">contact</a></li>
+                                </ul>
+                                <div id="icon"></div>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="title title_website">
-            <div>
-                <h2>Bonjour, <span></span></h2>
-                <h2>je m'appelle<span></span></h2>
-                <h2>Karim <span></span></h2>
-                <a href="#cv" type="button" class="portfolio">Curriculum vitæ</a>
+            <div class="title title_website">
+                <div>
+                    <h2>Bonjour, <span></span></h2>
+                    <h2>je m'appelle<span></span></h2>
+                    <h2>Karim <span></span></h2>
+                    <a href="#cv" type="button" class="portfolio">Curriculum vitæ</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
+
     <!--page présentation-->
     <main>
         <section id="cv">
             <div class="about">
                 <div class="about-col-1">
-                    <img src="" alt="profile">
+                    <img src="assets/img/profile pic placeholder.jpg" alt="profile">
                 </div>
                 <div class="about-col-2">
                     <h3 class="sub-title">À propos de moi</h3>
-                    <p></p>
-                    
+                    <p>Enthousiaste étudiant en développement web, je suis actuellement en Bachelor, cultivant ma
+                        passion pour la création digitale et l'innovation technologique. Doté d'une solide compréhension
+                        des langages de programmation tels que HTML, CSS, et JavaScript, je m'efforce d'apporter des
+                        solutions créatives et efficaces aux défis du développement web. Mon engagement envers
+                        l'apprentissage continu et ma capacité à travailler en équipe font de moi un contributeur
+                        dynamique dans des projets axés sur la conception et la fonctionnalité web. Par ailleurs, mes
+                        compétences s'étendent à la création d'interfaces utilisateur intuitives, à l'intégration de
+                        bases de données et à l'optimisation des performances des sites web. Fort de mon sens aiguisé du
+                        design et de ma capacité à résoudre des problèmes, je suis déterminé à contribuer de manière
+                        significative à des projets qui repoussent les limites de l'expérience utilisateur.
+                        Mon approche méthodique, combinée à ma curiosité technologique, me pousse à rester à l'affût des
+                        dernières tendances et des meilleures pratiques du développement web. Ayant participé à divers
+                        projets académiques et personnels.</p>
+
                 </div>
-    <!--page présentation-->
+                <!--page présentation-->
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skillsList">
+                <nav class="skillsNav">
+                    <h3>Compétences</H3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>python</li>
+                        <li>Systèmes Linux</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe InDesign</li>
+                        <li>Microsoft Office 365</li>
+                        <li>Montage/Démontage pc</li>
+                    </ul>
+                </nav>
             </div>
         </section>
     </main>
@@ -72,9 +96,13 @@
             <div class="social">
                 <div class="socialList">
                     <nav class="allsocial">
+                        <h3>Contact</h3>
                         <ul>
-                            <li>Mail<a href="#">oujidkarim@gmail.com</a></li>
-                            <li>Linked-in<a href="#">Karim Oujid</a></li>
+                            <li>Mail : <a href="mailto:oujidkarim@gmail.com" target="_blank">oujidkarim@gmail.com</a>
+                            </li>
+                            <li>Linked-in : <a
+                                    href="https://www.linkedin.com/in/karim-oujid-903927268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blan">Karim Oujid</a></li>
                         </ul>
                     </nav>
                 </div>
