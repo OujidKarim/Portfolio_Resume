@@ -264,15 +264,22 @@ a:hover {
 .skillsList {
   display: flex;
   color: #fff;
+  padding-bottom: 50px;
+
+}
+
+.skillsNav ul li{
+  display: inline-block;
+  padding: 0 25px;
 }
 
 
-
 .skillsNav ul {
+  
   margin: 50px;
   font-size: 20px;
   list-style: none;
-  line-height: 30px;
+  line-height: 50px;
   
 }
 
@@ -313,6 +320,14 @@ footer::after {
 .allsocial h3 {
   color: #fff;
   font-size: 50px;
+}
+
+.fa-linkedin {
+  color: #0266C3;
+}
+
+.fa-github {
+  color: #000;
 }
 /* animations et media query */
 @keyframes text_reveal_box {
