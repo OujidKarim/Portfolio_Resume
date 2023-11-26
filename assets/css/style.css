@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #002b0e;
+}
+
 html {
   font-family: "Playfair Display", serif;
 }
@@ -169,7 +173,7 @@ a:hover {
   color: #15bd4d;
   background-color: transparent;
   border: 2px solid #15bd4d;
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -218,10 +222,11 @@ a:hover {
 
 .about-col-1 img {
   width: 80%;
-  border-radius: 15px;
+  border-radius: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }
+
 
 .about-col-2 {
   flex-basis: 60%;
@@ -246,7 +251,7 @@ a:hover {
   background-position: top center;
   position: relative;
   z-index: 1;
-  height: 70vh;
+  height: auto;
 }
 
 #skills::after {
@@ -265,22 +270,18 @@ a:hover {
   display: flex;
   color: #fff;
   padding-bottom: 50px;
-
 }
 
-.skillsNav ul li{
+.skillsNav ul li {
   display: inline-block;
   padding: 0 25px;
 }
 
-
 .skillsNav ul {
-  
   margin: 50px;
   font-size: 20px;
   list-style: none;
   line-height: 50px;
-  
 }
 
 .skillsNav h3 {
@@ -288,13 +289,20 @@ a:hover {
   padding: 58px;
 }
 
+
+/* footer */
+
+
 footer {
+  display: flex;
   background-image: url(../img/step_background.webp);
   background-size: cover;
   background-position: top center;
   position: relative;
   z-index: 1;
   padding: 5%;
+  width: auto;
+  height: auto;
 }
 
 footer::after {
@@ -314,7 +322,7 @@ footer::after {
   color: #fff;
   text-decoration: none;
   list-style: none;
-  line-height: 50px;
+  line-height: auto;
 }
 
 .allsocial h3 {
@@ -323,12 +331,28 @@ footer::after {
 }
 
 .fa-linkedin {
-  color: #0266C3;
+  color: #0266c3;
 }
 
 .fa-github {
   color: #000;
 }
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+
 /* animations et media query */
 @keyframes text_reveal_box {
   50% {
@@ -400,7 +424,7 @@ footer::after {
     margin: auto;
   }
 
-  .skillsList h3 nav ul li{
+  .skillsList h3 nav ul li {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
