@@ -289,7 +289,10 @@ a:hover {
   padding: 58px;
 }
 
-
+#skills h2 {
+  display: none;
+  
+}
 /* footer */
 
 
