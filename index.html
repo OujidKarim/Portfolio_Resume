@@ -1,159 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/99928b2ffa.js" crossorigin="anonymous"></script>
-  <title>Portfolio CV Oujid Karim</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+    <title>Portfolio Resume</title>
 </head>
-
 <body>
-  <header>
-    <section id="title" class="hidden">
-      <div class="header_website">
-        <div class="nav-bar">
-          <div class="nav-list">
-            <div class="bar">
-              <nav id="nav">
-                <a href="#title">
-                  <h1><span>O</span>ujid <span>K</span>arim</h1>
-                </a>
-                <ul>
-                  <li><a href="#cv">présentation</a></li>
-                  <li><a href="#skills">compétences</a></li>
-                  <li><a href="#contact">contact</a></li>
-                </ul>
-                <div id="icon"></div>
-              </nav>
-            </div>
-          </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="https://github.com/yourprofile" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        <div class="vertical-line"></div>
+    </div>
+    <div class="sidebar-right">
+        <p>yashita.namdeo2000@gmail.com</p>
+        <div class="right-vertical-line"></div>
+    </div>    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
         </div>
-      </div>
-      <div class="title title_website">
-        <div>
-          <h2>Bonjour, <span></span></h2>
-          <h2>je m'appelle<span></span></h2>
-          <h2>Karim <span></span></h2>
-          <a href="#cv" class="portfolio">Curriculum vitæ</a>
+        <ul class="nav-links">
+            <li><a href="#about">A Propos</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="resume-button">
+            <a href="#resume">CV</a>
         </div>
-      </div>
+    </nav>
+    <section id="about" class="hero">
+        <div class="hero-content">
+            <h1>Hello, my name is <span class="highlight">Karim Oujid.</span></h1>
+            <h2>I love exploring new things!</h2>
+            <p>I'm a Final Year Computer Science Engineering Student at SVVV, Indore. Primarily interested in Web Development and Data Science.</p>
+            <p>I enjoy learning new skills and implementing them in real life!</p>
+        </div>
     </section>
-  </header>
-
-  <!--page présentation-->
-  <main>
-    <section id="cv" class="hidden">
-      <div class="about">
-        <div class="about-col-1">
-          <img src="assets/img/Karim_profile_pic.jpeg" alt="profile">
-        </div>
-        <div class="about-col-2">
-          <h3 class="sub-title">À propos de moi</h3>
-
-          <p>
-            Etudiant à la manu (école supérieure des métiers du numérique) en
-            1ère année de bachelor web & application dev & designer UI/UX, je
-            suis un passionné d'informatique et des nouvelles technologies qui
-            aime expérimenter la nouveauté.
-          </p>
-          <p>
-            Mon parcours m'a permis d'explorer diverses possibilités dans la
-            programmation ainsi que de divers outils de conception.
-          </p>
-          <p>
-            Mon objectif est de devenir un professionnel polyvalent dans le
-            développement web, prêt à relever les défis du monde du numérique.
-          </p>
-          <p>
-            J'accorde une grande importance à l'apprentissage continu et reste
-            ouvert aux nouvelles opportunités qui me permettront de me
-            développer dans ce domaine exaltant.
-          </p>
-        </div>
-        <!--page présentation-->
-      </div>
-    </section>
-    <section id="skills" class="hidden">
-      <h2>Compétences</h2>
-      <div class="skillsList">
-        <nav class="skillsNav">
-          <h3>Compétences</h3>
-          <ul>
-            <li>
-              <img src="assets/img/html.png" alt="html">
-              <h4>HTML5</h4>
-            </li>
-            <li>
-              <img src="assets/img/css-3.png" alt="css">
-              <h4>CSS</h4>
-            </li>
-            <li>
-              <img src="assets/img/js.png" alt="JavaScript" >
-              <h4>JavaScript</h4>
-            </li>
-            <li>
-              <img src="assets/img/python.png" alt="python">
-              <h4>Python</h4>
-            </li>
-            <li>
-              <img src="assets/img/linux.png" alt="linux">
-              <h4>Linux</h4>
-            </li>
-            <li>
-              <img src="assets/img/photoshop.png" alt="photoshop">
-              <h4>Photoshop</h4>
-            </li>
-            <li>
-              <img src="assets/img/illustrator.png" alt="illustrator">
-              <h4>Illustrator</h4>
-            </li>
-            <li>
-              <img src="assets/img/indesign.png" alt="indesign">
-              <h4>InDesign</h4>
-            </li>
-            <li>
-              <img src="assets/img/office.png" alt="microsoft office">
-              <h4>Microsoft Office</h4>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <section id="contact" class="hidden">
-      <div class="social">
-        <div class="socialList">
-          <nav class="allsocial">
-            <h3>Contact</h3>
-            <ul>
-              <li>
-                Mail :
-                <a href="mailto:oujidkarim@gmail.com" target="_blank">oujidkarim@gmail.com</a>
-              </li>
-              <li>
-                Linked-in :
-                <a href="https://www.linkedin.com/in/karim-oujid-903927268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                  target="_blank" class="fa fa-linkedin"></a>
-              </li>
-              <li>
-                GitHub :
-                <a href="https://github.com/OujidKarim" class="fa fa-github" target="_blank"></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-
-    </section>
-  </footer>
-  <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
