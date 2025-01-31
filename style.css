@@ -427,7 +427,8 @@ noscript {
 .logo-top {
     width: 100%;
     align-items: center;
-    display: flex
+    display: flex;
+    z-index: -99;
 }
 
 .hey {
